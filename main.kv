@@ -1,0 +1,16 @@
+BoxLayout:
+    orientation: "vertical"
+    BoxLayout:
+        orientation: "vertical"
+        padding: 100
+        Button:
+            id:_btn
+            text: "Hello World"
+            on_press: print ("hello")
+
+    BoxLayout:
+        size_hint_y: None
+        height: 50
+        Button:
+            text: "Animate"
+            on_press: app.animate(_btn); 
